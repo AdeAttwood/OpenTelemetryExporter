@@ -1,0 +1,24 @@
+[package]
+name = "open-telemetry-exporter"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = ["reqwest-blocking"]
+reqwest-blocking = ["opentelemetry-otlp/reqwest-blocking-client"]
+
+[dependencies]
+opentelemetry = { version = "0.30", features = ["logs", "metrics"] }
+opentelemetry_sdk = { version = "0.30", features = ["logs", "metrics"] }
+opentelemetry-otlp = { version = "0.30", features = ["http-proto", "logs", "metrics", "reqwest-blocking-client"] }
+opentelemetry-log = "0.2.0"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["rt", "macros", "time"] }
+sysinfo = "0.36.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+windows-service = "0.8.0"
+glob = "0.3.2"
+
+[dev-dependencies]
+tempfile = "3.0"
