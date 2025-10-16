@@ -18,7 +18,7 @@ jobs:
         run: cargo build --release
 
       - name: Upload to release
-        uses: softprops/action-gh-release@v5
+        uses: softprops/action-gh-release@v2
         with:
           files: target/release/open-telemetry-exporter
         env:
@@ -37,7 +37,7 @@ jobs:
         run: cargo build --release
 
       - name: Upload to release
-        uses: softprops/action-gh-release@v5
+        uses: softprops/action-gh-release@v2
         with:
           files: target/release/open-telemetry-exporter.exe
         env:
