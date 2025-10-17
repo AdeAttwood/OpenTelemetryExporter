@@ -12,7 +12,7 @@ opentelemetry = { version = "0.30", features = ["logs", "metrics"] }
 opentelemetry_sdk = { version = "0.30", features = ["logs", "metrics"] }
 opentelemetry-otlp = { version = "0.30", features = ["http-proto", "logs", "metrics", "reqwest-blocking-client"] }
 opentelemetry-log = "0.2.0"
-reqwest = { version = "0.11", features = ["json"] }
+reqwest = { version = "0.12", features = ["json"] }
 tokio = { version = "1", features = ["rt", "macros", "time"] }
 sysinfo = "0.37.0"
 serde = { version = "1.0", features = ["derive"] }
