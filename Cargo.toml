@@ -8,7 +8,7 @@ default = ["reqwest-blocking"]
 reqwest-blocking = ["opentelemetry-otlp/reqwest-blocking-client"]
 
 [dependencies]
-opentelemetry = { version = "0.31.0", features = ["logs", "metrics"] }
+opentelemetry = { version = "0.32.0", features = ["logs", "metrics"] }
 opentelemetry_sdk = { version = "0.31.0", features = ["logs", "metrics"] }
 opentelemetry-otlp = { version = "0.31.0", features = ["http-proto", "logs", "metrics", "reqwest-blocking-client"] }
 opentelemetry-log = "0.2.0"
